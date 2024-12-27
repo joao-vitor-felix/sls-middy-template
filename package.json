@@ -4,8 +4,6 @@
   "description": "serverless framework template",
   "scripts": {
     "dev": "sls offline --reloadHandler",
-    "package": "sls package",
-    "deploy": "sls deploy",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest watch --passWithNoTests",
     "test:ci": "vitest run --coverage --passWithNoTests",
@@ -23,7 +21,8 @@
     "@middy/http-json-body-parser": "^6.0.0",
     "@middy/http-multipart-body-parser": "^6.0.0",
     "@middy/http-response-serializer": "^6.0.0",
-    "@middy/http-router": "^6.0.0"
+    "@middy/http-router": "^6.0.0",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.717.0",

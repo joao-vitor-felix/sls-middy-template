@@ -8,7 +8,9 @@
     "skipLibCheck": true,
     "types": ["vitest/globals"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@application/*": ["./src/application/*"],
+      "@main/*": ["./src/main/*"]
     }
   }
 }

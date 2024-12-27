@@ -5,12 +5,22 @@ provider:
   name: aws
   runtime: nodejs20.x
   architecture: arm64
+  region: ${opt:region, 'us-east-1'}
+  stage: ${opt:stage, 'dev'}
 
 package:
   individually: true
 
 plugins:
   - serverless-offline
+
+stages:
+  prod:
+    observability: true
+  sandbox:
+    observability: true
+  default:
+    observability: false
 
 build:
   esbuild:
